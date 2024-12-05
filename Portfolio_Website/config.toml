@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://tobias.ziller.com"
+base_url = "https://tobiasziller.netlify.app"
 
 title = "Ziller Tobias"
 description = "Die Portfolio-Website von Tobias Ziller"
