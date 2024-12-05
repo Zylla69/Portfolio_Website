@@ -121,12 +121,12 @@
   }
 }
 
-.img{
+img {
   width: 150px; /* Breite des Bildes */
-  height: 150px; /* Höhe des Bildes, gleich wie die Breite */
-  border-radius: 50%; /* Macht das Bild rund */
-  object-fit: cover; /* Schneidet das Bild proportional zu, falls nötig */
-  margin-bottom: 20px; /* Abstand zum nachfolgenden Text */
-  border: 5px solid #ddd; /* Optional: Rahmen um das Bild */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Schatteneffekt */
+    height: 150px; /* Höhe des Bildes, gleich wie die Breite */
+    border-radius: 50%; /* Macht das Bild rund */
+    object-fit: cover; /* Schneidet das Bild proportional zu, falls nötig */
+    margin-bottom: 20px; /* Abstand zum nachfolgenden Text */
+    border: 5px solid #ddd; /* Optional: Rahmen um das Bild */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Schatteneffekt */
 }
