@@ -1,0 +1,114 @@
+{% macro about() %}
+ <div class="user-details">
+  <h1> Über meine Person </h1>
+  <p> {{ config.extra.user_description }} </p>
+  <img src="Person.jpg">
+</div>
+  <div class="user">
+    <div class="tech">
+      <h2>Design</h2>
+      <i class="devicon-html5-plain-wordmark colored"></i>
+      <i class="devicon-bootstrap-plain-wordmark colored"></i>
+      <i class="devicon-css3-plain colored"></i>
+      <p>
+        In den letzten fünf Jahren habe ich HTML5 gelernt, um moderne und zugängliche Webseiten zu erstellen. Ich habe mich mit den neuesten Standards vertraut gemacht und diese erfolgreich in Projekten angewendet. Mit Bootstrap habe ich effektive Layouts und responsive Designs erstellt, um Webseiten nutzerfreundlich zu gestalten, unabhängig vom Gerät. CSS3 hat es mir ermöglicht, fortschrittliche Animationen und Stile hinzuzufügen, um Webseiten visuell ansprechender zu machen.
+      </p>
+    </div>
+    <div class="tech">
+      <h2>Code</h2>
+      <i class="devicon-javascript-plain colored"></i>
+      <i class="devicon-java-plain-wordmark colored"></i>
+      <i class="devicon-csharp-plain colored"></i>
+      <p>
+        JavaScript hat mir geholfen, dynamische und interaktive Webanwendungen zu entwickeln. Ich habe mich mit DOM-Manipulation und modernen Frameworks wie React vertraut gemacht. Java war eine wichtige Sprache für objektorientierte Programmierung. Ich habe es genutzt, um komplexe Algorithmen und Softwarelösungen zu entwickeln. Mit C# habe ich Desktop- und Webanwendungen entwickelt, insbesondere mit .NET-Frameworks, um professionelle Softwarelösungen zu erstellen.
+      </p>
+       
+    </div>
+    <div class="tech">
+      <h2>Tools</h2>
+      <i class="devicon-visualstudio-plain colored"></i>
+      <i class="devicon-intellij-plain colored"></i>
+      <i class="devicon-github-original-wordmark"></i>
+      <p>
+        Visual Studio hat sich als leistungsstarke IDE erwiesen, die ich für die Entwicklung, das Debuggen und das Testen von Projekten eingesetzt habe. IntelliJ IDEA habe ich genutzt, um Java- und Kotlin-Projekte effizient zu entwickeln und meinen Workflow zu optimieren. Mit GitHub habe ich gelernt, wie wichtig Versionierung und Zusammenarbeit in der Softwareentwicklung sind, und ich habe zahlreiche Projekte erfolgreich verwaltet.
+      </p>
+    </div>
+</div>
+{% endmacro about %}
+
+{% macro projects() %}
+<div class="user-details">
+  <h1> Meine Projekte </h1>
+</div>
+
+<div class="user-projects">
+  <div class="images-right">
+    <img alt="visualobjectrecognition" src="{{ config.base_url ~ "/img/visualobjectrecognition.jpg" }}" />
+  </div>
+  <div class="contents">
+    <h3> Visual-Object Recognition</h3>
+    <p>Dieses Projekt wurde zusammen mit der Lagerage GmbH entwickel. Ausgangslage: Es gibt verschidene Lager in einem Lagerhaus, welche über eine Kamera verfügen. Das Programm welches hier entwickelt wurde, greift auf die gesendeten Kamerabilder zu und erkennt welche Objekte der Mieter in sein Lager trägt. Dies dient dazu um illegale Objekte zu erkennen und ein Lagerinventar für den Nutzer zu erstellen.</p>
+    <a class="project-link"  href="https://github.com/fabianscharfetter/diplomarbeit">Check it out</a>
+  </div>
+</div>
+
+<div class="user-projects">
+  <div class="images-left">
+    <img alt="mbot" src="{{ config.base_url ~ "/img/mbot.png" }}" />
+  </div>
+  <div class="contents-right">
+    <h3 href="https://github.com/fabianscharfetter/diplomarbeit"> M-Bot </h3>
+    <p>In der vierten Klasse haben wir im Rahmen des Unterrichtsfach Systemplanung und Management das MBot-Projekt entwickelt. Bei diesem Projekt wurde uns ein MBot zur Verfügung gestellt, welcher durch die von uns entwickelte Webanwendung gesteuert werden kann.</p>
+    <a class="project-link" href="https://github.com/Paul06w/Team_4_Project_MBot">Check it out</a>
+  </div>
+</div>
+
+<div class="user-projects">
+  <div class="images-right">
+    <img alt="portfoliowebsite" src="{{ config.base_url ~ "/img/portfoliowebsite.jpg" }}" />
+  </div>
+  <div class="contents">
+    <h3> Portfolio-Website </h3>
+    <p>Dieses Projekt wurde zusammen mit der Lagerage GmbH entwickel. Ausgangslage: Es gibt verschidene Lager in einem Lagerhaus, welche über eine Kamera verfügen. Das Programm welches hier entwickelt wurde, greift auf die gesendeten Kamerabilder zu und erkennt welche Objekte der Mieter in sein Lager trägt. Dies dient dazu um illegale Objekte zu erkennen und ein Lagerinventar für den Nutzer zu erstellen.</p>
+    <a class="project-link" href="#">Check it out</a>
+  </div>
+</div>
+{% endmacro projects %}
+
+{% macro timeline() %}
+<section id="werdegang" class="section timeline-section">
+  <h2>Werdegang</h2>
+  <div class="timeline">
+      <div class="timeline-item left">
+          <div class="timeline-content">
+              <h3>2008 - 2012</h3>
+              <p>Ausbildung als Maurer bei der Firma XY. Erste berufliche Erfahrungen in der Bauindustrie.</p>
+          </div>
+      </div>
+      <div class="timeline-item right">
+          <div class="timeline-content">
+              <h3>2013 - 2015</h3>
+              <p>Elektrikerlehre erfolgreich abgeschlossen. Fokus auf elektrische Installationen und Reparaturen.</p>
+          </div>
+      </div>
+      <div class="timeline-item left">
+          <div class="timeline-content">
+              <h3>2016 - 2018</h3>
+              <p>Fliesenleger bei Z GmbH. Präzisionsarbeit und kreative Raumgestaltung.</p>
+          </div>
+      </div>
+      <div class="timeline-item right">
+          <div class="timeline-content">
+              <h3>2019 - 2023</h3>
+              <p>Programmieren als Leidenschaft entdeckt und fortlaufend selbst weitergebildet. Arbeiten an diversen IT-Projekten, darunter Visual Object Recognition.</p>
+          </div>
+      </div>
+      <div class="timeline-item left">
+          <div class="timeline-content">
+              <h3>2024</h3>
+              <p>Erstellung meiner Portfolio-Website. Ziel: mich potenziellen Arbeitgebern und Projektpartnern optimal zu präsentieren.</p>
+          </div>
+      </div>
+  </div>
+</section>
+{% endmacro timeline %}

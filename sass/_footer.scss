@@ -1,0 +1,107 @@
+.footer {
+  background-color: #121212; /* Dunkler Hintergrund */
+  color: #e0e0e0; /* Helle Schriftfarbe */
+  padding: 40px 20px;
+  text-align: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+ 
+.footer-container {
+  display: flex;
+  justify-content: space-between; /* Abstand zwischen den Abschnitten */
+  align-items: flex-start;
+  flex-wrap: wrap; /* Stapeln auf kleinen Bildschirmen */
+  max-width: 1200px;
+  margin: 0 auto; /* Zentrierung */
+  gap: 20px; /* Abstand zwischen den Abschnitten */
+}
+ 
+.footer-container > div {
+  flex: 1; /* Gleiche Breite für beide Abschnitte */
+  min-width: 250px; /* Mindestbreite für jedes Element */
+}
+ 
+.footer h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+ 
+.social-icons {
+  display: flex;
+  justify-content: center; /* Zentriert die Icons */
+  gap: 15px;
+  margin-top: 10px;
+}
+ 
+.social-icons a {
+  color: #e0e0e0;
+  font-size: 24px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+ 
+.social-icons a:hover {
+  color: #28b6c6;
+  transform: scale(1.2);
+}
+ 
+.contact p {
+  margin: 10px 0;
+}
+ 
+.contact a {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #1f1f1f;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+ 
+.contact a:hover {
+  background-color: #28b6c6;
+  color: #ffffff;
+}
+ 
+.footer p {
+  margin-top: 30px;
+  font-size: 12px;
+  color: #aaa;
+}
+ 
+.footer p a {
+  color: #28b6c6;
+}
+ 
+.footer p a:hover {
+  text-decoration: underline;
+}
+ 
+/* Responsives Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Stapelt die Elemente untereinander */
+    align-items: center;
+  }
+  .footer-container > div {
+    text-align: center; /* Zentriert den Text */
+  }
+}
+ 
+@media (max-width: 576px) {
+  .footer {
+    padding: 30px 15px;
+  }
+ 
+  .social-icons a {
+    font-size: 20px;
+  }
+ 
+  .footer p {
+    font-size: 12px;
+  }
+}
+ 

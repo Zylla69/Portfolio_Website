@@ -1,0 +1,117 @@
+/* Globale Einstellungen für die Timeline-Section */
+.timeline-section {
+    text-align: center;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 40px 20px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+   
+  /* Timeline-Zeile */
+  .timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+   
+  /* Punkte auf der Linie */
+  .timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 20px 0;
+    box-sizing: border-box;
+  }
+   
+  .timeline-item.left {
+    left: 0;
+    text-align: right;
+  }
+   
+  .timeline-item.right {
+    left: 50%;
+    text-align: left;
+  }
+   
+  /* Inhalte der Timeline-Items */
+  .timeline-content {
+    background: white;
+    color: #333;
+    padding: 15px 20px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    width: 90%; /* Standardbreite der Inhalte */
+    max-width: 320px; /* Maximale Breite der Inhalte */
+    margin: 0 auto; /* Zentrierung */
+    box-sizing: border-box;
+  }
+   
+  /* Verbindungslinie und Punkte */
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    width: 15px;
+    height: 15px;
+    background-color: #28b6c6;
+    border-radius: 50%;
+    z-index: 1;
+  }
+   
+  .timeline-item.left::before {
+    right: -7.5px;
+  }
+   
+  .timeline-item.right::before {
+    left: -7.5px;
+  }
+   
+  .timeline::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #28b6c6;
+  }
+   
+  /* Responsive Anpassungen */
+  @media (max-width: 768px) {
+    .timeline-item left {
+      width: 100%; /* Volle Breite für beide Seiten */
+      text-align: center; /* Zentrierung des Inhalts */
+      left: 0; /* Entfernt die linke Verschiebung */
+    }
+
+    .timeline-item right {
+        width: 100%; /* Volle Breite für beide Seiten */
+        text-align: center; /* Zentrierung des Inhalts */
+        right: 0; /* Entfernt die linke Verschiebung */
+      }
+   
+    .timeline-content {
+      width: 100%; /* Inhalte füllen die gesamte Breite */
+      max-width: 90%; /* Beschränkung der Breite auf 90% */
+      margin: 0 auto; /* Zentrierung der Inhalte */
+    }
+   
+    .timeline-item.left::before,
+    .timeline-item.right::before {
+      left: 50%; /* Punkt wird zur Mitte zentriert */
+      transform: translateX(-50%);
+    }
+   
+    .timeline::after {
+      left: 50%;
+      width: 2px;
+    }
+  }
+   
+  @media (max-width: 576px) {
+    .timeline-content {
+      width: 100%; /* Inhalte füllen die gesamte Breite */
+      padding: 15px; /* Weniger Padding auf kleineren Bildschirmen */
+    }
+  }

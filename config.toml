@@ -1,0 +1,26 @@
+# The URL the site will be built for
+base_url = "https://particle.vercel.app"
+
+title = "Ziller Tobias"
+description = "Die Portfolio-Website von Tobias Ziller"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+# The default language; used in feeds.
+default_language = "en"
+
+[extra]
+# User settings
+username = "Tobias Ziller"
+user_description = "Ich bin ein Allrounder mit einem außergewöhnlich breiten Erfahrungshorizont – von Maurerarbeiten über Elektrik bis hin zu Fliesenlegen und natürlich Programmieren. In den letzten Jahren habe ich meine Leidenschaft für das Programmieren entdeckt und mich erfolgreich in der digitalen Welt zurechtgefunden. Für mich gibt es keinen Job, der zu groß oder zu klein ist. Mit meinem vielseitigen Hintergrund kann ich jedes Projekt anpacken und zum Erfolg führen. Was mich auszeichnet, ist nicht nur meine technische Vielseitigkeit, sondern auch meine Teamfähigkeit. Ich arbeite gerne mit anderen zusammen, tausche Ideen aus und finde kreative Lösungen – und das immer mit einer guten Portion Humor. Ob bei intensiven Projekten oder lockeren Gesprächen, ich bin immer für einen Spaß zu haben und trage so zur positiven Stimmung im Team bei. Wenn du jemanden suchst, der nicht nur fachlich versiert, sondern auch mit einer positiven Einstellung und viel Energie an die Arbeit geht, dann bist du bei mir genau richtig! Ach, und wenn du eine unvergessliche Party suchst – ich veranstalte die besten Houseparties! 😎"
+user_title = "Software Developer"
+email = "tobias.ziller@htl-saalfelden.at"
+twitter_username = "https://x.com/Zylla69"
+github_username =  "https://github.com/Zylla69"
+
+# Google-analytics
+google_analytics.id = ""
